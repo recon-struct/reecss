@@ -17,3 +17,11 @@ your CSS and JavaScript can live in harmony, like peanut butter and jelly or
 cats and cardboard boxes.
 
 Dive in, stay sane, and let **reecss** handle the rest.
+
+## Links
+
+- [Documentation](https://recon-struct.github.io/reecss/)
+
+### Blog Series
+
+- [Reecss Announcement](https://blog.hox.io/articles/2024-05-24)

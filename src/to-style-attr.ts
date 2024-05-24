@@ -6,9 +6,13 @@ import type { CssVars } from './types'
  * @returns The string representation of the style attribute.
  */
 const toStyleAttr = (cssVars: CssVars) => {
-  return Object.entries(cssVars).reduce((memo, [key, value]) => {
-    return `${memo}${key}:${value};`
-  }, '')
+  return Object.entries(cssVars)
+    .reduce((memo, [key, value]) => {
+      memo.push(`${key}:${value};`)
+
+      return memo
+    }, [] as string[])
+    .join('\n')
 }
 
 export default toStyleAttr

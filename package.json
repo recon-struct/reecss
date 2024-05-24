@@ -16,7 +16,8 @@
   "scripts": {
     "generate-docs": "typedoc --out docs src",
     "test": "bun test",
-    "build": "bun build ./src/index.ts --outdir ./dist && tsc"
+    "build": "bun build ./src/index.ts --outdir ./dist && tsc",
+    "example-design-system": "bun ./src/examples/design-system.ts"
   },
   "type": "module",
   "main": "dist/index.js",
