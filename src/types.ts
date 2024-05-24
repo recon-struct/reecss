@@ -52,14 +52,3 @@ export type CssVar<A extends string = string> = `--${A}`
  * Represents a mapping of CSS variable names to their corresponding values.
  */
 export type CssVars = Record<CssVar, string | number>
-
-/**
- * Converts a CSS manifest to CSS variables.
- * @typeParam A - The type of the CSS manifest.
- */
-export type CssManifestToCssVars<
-  A extends CssManifest,
-  B extends string = ManifestSeparator,
-> = {
-  [C in GetKeys<A, B> as CssVar<C>]: GetValue<A, C, B>
-}

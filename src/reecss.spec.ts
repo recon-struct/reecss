@@ -12,7 +12,7 @@ describe('reecss', () => {
         small: '0.5rem',
         medium: '1rem',
       },
-    }
+    } as const
     const cssVariables = reecss(ref)
 
     expect(cssVariables).toEqual({

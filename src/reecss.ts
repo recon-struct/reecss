@@ -16,8 +16,8 @@ const reecss = <
   A extends CssManifest,
   B extends string = ManifestSeparator,
   C extends GetKeys<A, B> = GetKeys<A, B>,
-  D extends { [key in CssVar<C>]: GetValue<A, C, B> } = {
-    [key in CssVar<C>]: GetValue<A, C, B>
+  D extends { [E in C as CssVar<E>]: GetValue<A, E, B> } = {
+    [E in C as CssVar<E>]: GetValue<A, E, B>
   },
 >(
   ref: A,
