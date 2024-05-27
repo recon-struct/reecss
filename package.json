@@ -16,7 +16,7 @@
   "scripts": {
     "generate-docs": "typedoc --out docs src",
     "test": "bun test",
-    "build": "bun build ./src/index.ts --outdir ./dist && tsc",
+    "build": "rimraf ./dist && tsc && bun build ./src/index.ts --outdir ./dist",
     "example-design-system": "bun ./src/examples/design-system.ts"
   },
   "type": "module",
